@@ -208,8 +208,8 @@ Create a new partner
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
+- GitHub: [@MafteiMarius](https://github.com/MafteiMarius)
+- LinkedIn: [Maftei Marius](https://www.linkedin.com/in/marius-maftei-48490b196/)
 
 ## 📄 License
 
@@ -220,15 +220,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Built for compliance with Romanian ANAF regulations
 - Uses BizPharma database structure
 - City data includes all Romanian localities
-
-## 📸 Screenshots
-
-### Landing Page
-![Landing Page](screenshots/landing.png)
-
-### Partner Form
-![Partner Form](screenshots/form.png)
-
 ---
 
 **Note:** This system is designed for Romanian businesses and includes Romania-specific validation and data structures.
