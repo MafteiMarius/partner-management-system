@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creare Partener - Persoană Juridică</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Date Partener - Persoană Juridică</h1>
+    <img id="logo" src="img/minifarm-logo.png" alt="Logo Minifarm" style="width:150px; display:block; margin-top:20px; margin:auto">
+    <form id="partenerForm" class="partenerForm">
+
+        <label for="cod">Cod fiscal (CUI): <span class="required">*</span></label><br>
+        <div class="cui-container">
+            <input type="text" id="cod" name="cod" required minlength="2" maxlength="15" 
+                   placeholder="Introduceți CUI (doar cifre)" style="flex: 1;">
+            <button type="button" id="verificaCUI">Verificare CUI</button>
+        </div><br>
+
+        <input type="checkbox" id="platitorTVA" name="platitorTVA">
+        <label for="platitorTVA">Platitor de TVA (se va adăuga RO în fața CUI-ului)</label><br><br>
+
+        <label for="nume">Denumire firmă: <span class="required">*</span></label><br>
+        <input type="text" id="nume" name="nume" required><br><br>
+
+        <label for="registru">Nr. reg. com.:</label><br>
+        <input type="text" id="registru" name="registru"><br><br>
+
+<!--        <label for="oras">Oraș: <span class="required">- Camp Obligatoriu</span></label><br>
+        <input type="text" id="oras" name="oras" required><br><br> -->
+        <label for="oras">Oras: <span class="required">*</span></label><br>
+        <input type="text" id="oras" placeholder="Caută oraș..." autocomplete="off" />
+        <div id="orasResults" class="results"></div>
+
+        <input type="hidden" id="idOras" /> 
+        <input type="hidden" id="idJudet" />
+        <br><br>
+
+        <label for="strada">Stradă: <span class="required">*</span></label><br>
+        <input type="text" id="strada" name="strada" required><br><br>
+
+        <label for="numar_strada">Număr stradă: <span class="required">*</span></label><br>
+        <input type="text" id="numar_strada" name="numar_strada" required><br><br>
+
+        <button type="submit" id="myButton">
+            Trimite
+        </button>
+        
+    </form>
+    <script src="anaf.js"></script>
+ <!--   <script src="script_pj.js"></script> -->
+</body>
+</html>

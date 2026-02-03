@@ -1,0 +1,236 @@
+/* Reset si Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Container Principal */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+#logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Titluri */
+h1 {
+    text-align: center;
+    color: #2d3748;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #718096;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #4a5568;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Form Sections */
+.form-section {
+    margin-bottom: 35px;
+}
+
+.partenerForm {
+    width: 100%;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    color: #4a5568;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: #f7fafc;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #a0aec0;
+}
+
+/* Required Star */
+.required {
+    color: #f56565;
+    font-weight: bold;
+}
+
+/* Row Container */
+.row-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Autocomplete Results */
+.results {
+    max-width: 41%;
+    position: absolute;
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    margin-top: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    width: calc(100% - 32px);
+    z-index: 999;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.result-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    border-bottom: 1px solid #f7fafc;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-item:hover {
+    background: #f7fafc;
+}
+
+.result-item.active {
+    background: #667eea;
+    color: white;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.btn-icon {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover .btn-icon {
+    transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+    
+    .row-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .subtitle {
+        font-size: 14px;
+    }
+}
+
+/* Custom Scrollbar pentru Results */
+.results::-webkit-scrollbar {
+    width: 8px;
+}
+
+.results::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.results::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 10px;
+}
+
+.results::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}

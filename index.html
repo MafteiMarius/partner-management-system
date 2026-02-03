@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creare Partener</title>
+    <link rel="stylesheet" href="/static/style_landing.css">
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="/static/img/minifarm-logo.png" alt="Logo Minifarm">
+        <h1>Creare Partener</h1>
+        <p class="subtitle">Selectați tipul de partener pe care doriți să-l creați</p>
+        
+        <div class="card-container">
+            <div class="card" onclick="location.href='/static/formular_pf.html'">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <h2>Persoană Fizică</h2>
+                <p>Adaugă un partener persoană fizică</p>
+                <div class="card-arrow">→</div>
+            </div>
+            
+            <div class="card disabled" title="În curând disponibil">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                </div>
+                <h2>Persoană Juridică</h2>
+                <p>Adaugă un partener persoană juridică</p>
+                <div class="badge">În curând</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
