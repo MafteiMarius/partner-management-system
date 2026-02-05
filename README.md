@@ -1,20 +1,20 @@
-# Partner Management System (Sistem Gestiune Parteneri)
+Partner Management System (Sistem Gestiune Parteneri)
 
 A modern web application for managing business partners (physical persons) with integration to SQL Server database. Built for Romanian businesses with ANAF compliance.
 
-## 🚀 Features
+Features
 
-- ✅ Modern, responsive UI with gradient design
-- 👤 Physical person (individual) partner creation
-- 🏛️ Integration with Romanian tax authority (ANAF) requirements
-- 🏙️ City autocomplete from comprehensive Romanian cities database
-- ✔️ CNP (Romanian personal identification number) validation
-- 📍 Complete address management (street, number, building, staircase, floor, apartment)
-- 📧 Contact information (phone, email)
-- 🔒 Duplicate partner detection
-- 💾 Direct SQL Server integration
+- Modern, responsive UI with gradient design
+- Physical person (individual) partner creation
+- Integration with Romanian tax authority (ANAF) requirements
+- City autocomplete from comprehensive Romanian cities database
+- CNP (Romanian personal identification number) validation
+- Complete address management (street, number, building, staircase, floor, apartment)
+- Contact information (phone, email)
+- Duplicate partner detection
+- Direct SQL Server integration
 
-## 🛠️ Tech Stack
+Tech Stack
 
 **Frontend:**
 - HTML5
@@ -30,14 +30,14 @@ A modern web application for managing business partners (physical persons) with 
 **Database:**
 - Microsoft SQL Server
 
-## 📋 Prerequisites
+Prerequisites
 
 - Python 3.7+
 - Microsoft SQL Server
 - SQL Server ODBC Driver
 - Flask and dependencies
 
-## 🔧 Installation
+Installation
 
 1. **Clone the repository:**
 ```bash
@@ -68,7 +68,7 @@ conn_str = (
 - `DictionarDetaliu` - Dictionary for entity types
 - `Oras` - Cities table
 
-## 🚀 Running the Application
+Running the Application
 
 1. **Start the Flask backend:**
 ```bash
@@ -90,7 +90,7 @@ python -m http.server 8000
 - Landing page: `http://localhost:8000/index.html`
 - Physical person form: `http://localhost:8000/formular_pf.html`
 
-## 📁 Project Structure
+Project Structure
 ```
 partner-management-system/
 ├── index.html              # Landing page
@@ -106,7 +106,7 @@ partner-management-system/
 └── README.md
 ```
 
-## 🎯 Usage
+Usage
 
 1. Navigate to the landing page
 2. Click "Persoană Fizică" to create a physical person partner
@@ -121,7 +121,7 @@ partner-management-system/
 4. Submit the form
 5. The partner is created in the SQL Server database
 
-## ✅ Features in Detail
+Features in Detail
 
 ### CNP Validation
 - Real-time validation of Romanian CNP
@@ -143,14 +143,14 @@ partner-management-system/
 - Checks for existing partner code
 - Returns appropriate error messages
 
-## 🔒 Security
+ Security
 
 - Input sanitization for SQL injection prevention
 - Character restrictions on name field
 - CNP format validation
 - Server-side validation
 
-## 📝 API Endpoints
+ API Endpoints
 
 ### POST `/adauga-partener`
 Create a new partner
@@ -190,12 +190,12 @@ Create a new partner
 - `4` - Partner name already exists
 - `11` - Address creation failed
 
-## 🐛 Known Issues
+ Known Issues
 
 - Legal entity (Persoană Juridică) form not yet implemented
 - `spNewTableId` stored procedure has ID collision issues (workaround implemented)
 
-## 🔮 Future Enhancements
+ Future Enhancements
 
 - [ ] Legal entity form
 - [ ] Partner editing functionality
@@ -205,17 +205,17 @@ Create a new partner
 - [ ] Partner categorization
 - [ ] Advanced filtering
 
-## 👨‍💻 Author
+ Author
 
 **Your Name**
 - GitHub: [@MafteiMarius](https://github.com/MafteiMarius)
 - LinkedIn: [Maftei Marius](https://www.linkedin.com/in/marius-maftei-48490b196/)
 
-## 📄 License
+ License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+ Acknowledgments
 
 - Built for compliance with Romanian ANAF regulations
 - Uses BizPharma database structure
